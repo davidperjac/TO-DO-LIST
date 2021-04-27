@@ -41,6 +41,6 @@ app.get('/work', function (req, res) {
 	res.render('list', { listTitle: 'Work List', newListItems: workItems });
 });
 
-app.listen(3000, function () {
+app.listen(process.env.PORT, function () {
 	console.log('Server funcionando en puerto 3000');
 });
